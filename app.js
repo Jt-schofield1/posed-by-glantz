@@ -6,8 +6,8 @@
     { src: 'images/win-hallway.jpeg', alt: 'Client and Jake with an IFBB Pro Card', tag: 'IFBB PRO CARD' },
     { src: 'images/backstage-2.jpeg', alt: 'Front double biceps check backstage', tag: 'STAGE READY' },
     { src: 'images/win-stage.jpeg', alt: 'Client flexing beside Jake holding an IFBB Pro Card', tag: 'IFBB PRO CARD' },
-    { src: 'images/win-hallway-2.jpeg', alt: 'Client holding an IFBB Pro Card next to Jake', tag: 'IFBB PRO CARD' },
-    { src: 'images/jacob-bw.jpeg', alt: 'Jake Glantzman', tag: 'THE COACH' }
+    { src: 'images/win-hallway-2.jpeg', alt: 'Jake Glantzman, posing coach — black-and-white portrait', tag: 'THE COACH' },
+    { src: 'images/jacob-bw.jpeg', alt: 'Client and Jake holding an IFBB Pro Card in the hallway', tag: 'IFBB PRO CARD' }
   ];
 
   function ready(fn) {
