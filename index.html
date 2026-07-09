@@ -43,9 +43,9 @@
       </div>
       <a class="nav-cta-desktop" href="https://wa.me/17329620576" target="_blank" rel="noopener" style="clip-path:polygon(11px 0, 100% 0, 100% calc(100% - 11px), calc(100% - 11px) 100%, 0 100%, 0 11px);background-image:url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' view%42ox='0 0 120 60' preserve%41spect%52atio='none'%3E%3Cpath d='M0,14 C12,6 26,6 40,12 C54,18 66,18 80,11 C94,4 108,6 120,12 L120,60 L0,60 Z' fill='%23151E2B' opacity='.6'/%3E%3Cpath d='M0,20 C14,12 28,12 42,18 C56,24 70,24 84,17 C98,10 110,12 120,18 L120,60 L0,60 Z' fill='%230C1017'/%3E%3C/svg%3E&quot;),linear-gradient(110deg,#A8842E 0%,#C9A24A 35%,#E6CB7E 50%,#C9A24A 65%,#A8842E 100%);background-repeat:no-repeat;background-position:center bottom,center;background-size:100% 0%,100% 100%;color:#151008;font-weight:700;font-size:11px;letter-spacing:.22em;padding:13px 24px;filter:drop-shadow(0 3px 14px rgba(201,162,74,.3));transition:background-size .7s cubic-bezier(.3,.7,.2,1),color .45s ease .1s,filter .5s" data-hover="background-size:100% 340%,100% 100% !important;color:var(--gold-bright) !important;filter:drop-shadow(0 6px 24px rgba(201,162,74,.55)) !important">BOOK A SESSION</a>
       <button class="nav-mobile" id="hamburger" aria-label="Menu" style="flex-direction:column;justify-content:center;gap:5px;width:44px;height:44px;padding:12px;background:transparent;border:1px solid rgba(201,162,74,.45);border-radius:2px;cursor:pointer">
-        <span id="bar1" style="display:block;height:1.5px;background:var(--gold);transition:transform .35s;transform:none"></span>
-        <span id="bar2" style="display:block;height:1.5px;background:#EDE6D6;transition:opacity .3s;opacity:1"></span>
-        <span id="bar3" style="display:block;height:1.5px;background:var(--gold);transition:transform .35s;transform:none"></span>
+        <span id="bar1" style="display:block;width:100%;height:2px;background:var(--gold);transition:transform .35s;transform:none"></span>
+        <span id="bar2" style="display:block;width:100%;height:2px;background:#EDE6D6;transition:opacity .3s;opacity:1"></span>
+        <span id="bar3" style="display:block;width:100%;height:2px;background:var(--gold);transition:transform .35s;transform:none"></span>
       </button>
     </div>
   </nav>
@@ -64,7 +64,7 @@
   </div>
 
   <!-- ============ HERO ============ -->
-  <header id="top" style="position:relative;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(90% 70% at 60% 20%,#101722 0%,#0A0E14 60%)">
+  <header id="top" style="position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:center;overflow:hidden;background:radial-gradient(90% 70% at 60% 20%,#101722 0%,#0A0E14 60%)">
     <div class="hero-desktop">
     <img src="images/hero-procard.jpeg" alt="Jake and a client holding an IFBB Pro Card on stage" fetchpriority="high" decoding="async" style="position:absolute;top:0;height:100%;object-fit:cover;z-index:1;right:0;width:min(72%, 940px);object-position:50% 52%;opacity:.96;filter:saturate(.92) contrast(1.04);-webkit-mask-image:linear-gradient(90deg, transparent 0%, rgba(0,0,0,.25) 20%, black 46%, black 82%, transparent 100%);mask-image:linear-gradient(90deg, transparent 0%, rgba(0,0,0,.25) 20%, black 46%, black 82%, transparent 100%)">
     <div style="position:absolute;inset:0;z-index:2;background:linear-gradient(90deg, #0A0E14 0%, rgba(10,14,20,.78) 28%, rgba(10,14,20,.18) 52%, rgba(10,14,20,0) 72%, rgba(10,14,20,.35) 100%)"></div>
@@ -108,22 +108,22 @@
     </div>
     </div>
     <div class="hero-mobile">
-      <div style="position:relative;width:100%;height:100svh;min-height:640px">
-        <div style="position:absolute;top:0;left:0;right:0;height:56%;clip-path:polygon(0 0,100% 0,100% 82%,0 100%)">
+      <div class="hm-wrap">
+        <div class="hm-photo">
           <img src="images/hero-procard.jpeg" alt="Jake and a client holding an IFBB Pro Card on stage" fetchpriority="high" decoding="async" style="width:100%;height:100%;object-fit:cover;object-position:44% 40%;filter:saturate(.9) contrast(1.08)">
           <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,9,13,.62),transparent 38%,rgba(6,9,13,.25) 75%,rgba(6,9,13,.92))"></div>
           <div style="position:absolute;inset:0;background:radial-gradient(60% 55% at 50% -8%,rgba(244,223,160,.18),transparent 70%)"></div>
         </div>
-        <div style="position:absolute;top:51.5%;left:-30px;right:-30px;transform:rotate(-4deg);background:linear-gradient(110deg,#A8842E,#E6CB7E 40%,#C9A24A 70%,#A8842E);padding:9px 0;overflow:hidden;box-shadow:0 10px 34px rgba(201,162,74,.35)">
+        <div class="hm-ticker">
           <div style="display:flex;width:max-content;animation:tickX 14s linear infinite;animation-play-state:var(--play)">
             <span style="display:flex;gap:18px;padding-right:18px;font-weight:700;font-size:10.5px;letter-spacing:.32em;color:#151008;white-space:nowrap">POSED BY GLANTZ<span style="font-family:serif">波</span>PRECISION<span style="font-family:serif">波</span>PRESENCE<span style="font-family:serif">波</span>PERFECTION<span style="font-family:serif">波</span></span>
             <span style="display:flex;gap:18px;padding-right:18px;font-weight:700;font-size:10.5px;letter-spacing:.32em;color:#151008;white-space:nowrap">POSED BY GLANTZ<span style="font-family:serif">波</span>PRECISION<span style="font-family:serif">波</span>PRESENCE<span style="font-family:serif">波</span>PERFECTION<span style="font-family:serif">波</span></span>
           </div>
         </div>
-        <div style="position:absolute;top:56%;left:0;right:0;bottom:0;padding:38px 22px calc(18px + env(safe-area-inset-bottom, 0px));display:flex;flex-direction:column">
-          <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(48px,15vw,62px);line-height:.94;letter-spacing:.01em;color:#F2ECDD;animation:heroIn .9s cubic-bezier(.2,.7,.2,1) .2s both">OWN<br><span style="color:transparent;-webkit-text-stroke:1.5px rgba(242,236,221,.75)">THE</span> <span style="background:linear-gradient(100deg,#A8842E,#E8C97A 50%,#C9A24A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">STAGE.</span></h1>
+        <div class="hm-content">
+          <h1 style="margin:0;font-family:'Cormorant Garamond',serif;font-weight:700;font-size:clamp(42px,13.5vw,56px);line-height:.96;letter-spacing:.01em;color:#F2ECDD;animation:heroIn .9s cubic-bezier(.2,.7,.2,1) .2s both">OWN<br><span style="color:transparent;-webkit-text-stroke:1.5px rgba(242,236,221,.75)">THE</span> <span style="background:linear-gradient(100deg,#A8842E,#E8C97A 50%,#C9A24A);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent">STAGE.</span></h1>
           <p style="margin:12px 0 0;font-weight:300;font-size:12.5px;line-height:1.8;letter-spacing:.06em;color:rgba(237,230,214,.72);animation:heroIn .9s cubic-bezier(.2,.7,.2,1) .35s both">Elite posing coaching by Jake Glantzman.<br>Every pose. Every transition. Judged ready.</p>
-          <div style="margin-top:auto;display:flex;flex-direction:column;gap:10px;animation:heroIn .9s cubic-bezier(.2,.7,.2,1) .5s both">
+          <div style="margin-top:auto;padding-top:20px;display:flex;flex-direction:column;gap:10px;animation:heroIn .9s cubic-bezier(.2,.7,.2,1) .5s both">
             <div style="display:flex;gap:10px">
               <a href="https://wa.me/17329620576" target="_blank" rel="noopener" style="flex:1.4;text-align:center;clip-path:polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);background:linear-gradient(110deg,#A8842E,#C9A24A 35%,#E6CB7E 50%,#C9A24A 65%,#A8842E);color:#151008;font-weight:700;font-size:11px;letter-spacing:.24em;padding:16px 0">BOOK A SESSION</a>
               <a href="#sessions" style="flex:1;text-align:center;clip-path:polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);border:1px solid rgba(201,162,74,.6);color:#E8C97A;font-weight:500;font-size:11px;letter-spacing:.22em;padding:16px 0;box-sizing:border-box">SESSIONS</a>

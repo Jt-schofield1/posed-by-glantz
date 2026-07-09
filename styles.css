@@ -18,7 +18,13 @@ a:hover{color:var(--gold-bright)}
 .nav-mobile{display:none}
 
 .hero-desktop{display:contents}
-.hero-mobile{display:none;width:100%}
+.hero-mobile{display:none;width:100%;align-self:flex-start}
+
+/* mobile hero — flow-based column so content can never overlap or hard-cut the CTAs */
+.hm-wrap{position:relative;width:100%;min-height:100vh;min-height:100svh;display:flex;flex-direction:column}
+.hm-photo{position:relative;flex:none;height:52vh;height:52svh;min-height:280px;max-height:calc(100vh - 360px);max-height:calc(100svh - 360px);clip-path:polygon(0 0,100% 0,100% 82%,0 100%)}
+.hm-ticker{position:relative;z-index:3;width:calc(100% + 60px);margin:-24px -30px 0;transform:rotate(-4deg);background:linear-gradient(110deg,#A8842E,#E6CB7E 40%,#C9A24A 70%,#A8842E);padding:9px 0;overflow:hidden;box-shadow:0 10px 34px rgba(201,162,74,.35)}
+.hm-content{position:relative;z-index:2;flex:1 0 auto;display:flex;flex-direction:column;padding:30px 22px max(18px,env(safe-area-inset-bottom,0px))}
 
 .about-grid{grid-template-columns:minmax(300px,5fr) 6fr}
 .about-img{margin-left:clamp(30px,4vw,60px)}
