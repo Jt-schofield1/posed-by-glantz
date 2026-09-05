@@ -7,7 +7,9 @@
     { src: 'images/backstage-2.jpeg', alt: 'Front double biceps check backstage', tag: 'STAGE READY' },
     { src: 'images/win-stage.jpeg', alt: 'Client flexing beside Jake holding an IFBB Pro Card', tag: 'IFBB PRO CARD' },
     { src: 'images/win-hallway-2.jpeg', alt: 'Jake Glantzman, posing coach — black-and-white portrait', tag: 'THE COACH' },
-    { src: 'images/jacob-bw.jpeg', alt: 'Client and Jake holding an IFBB Pro Card in the hallway', tag: 'IFBB PRO CARD' }
+    { src: 'images/jacob-bw.jpeg', alt: 'Client and Jake holding an IFBB Pro Card in the hallway', tag: 'IFBB PRO CARD' },
+    { src: 'images/north-american-stage.jpeg', alt: 'Client hitting a front pose on the North American Championships stage with Jake and his coach', tag: 'NORTH AMERICAN CHAMPION' },
+    { src: 'images/north-american-procard.jpeg', alt: 'Jake and a coach with a client holding the North American Championships trophy and IFBB Pro Card', tag: 'IFBB PRO CARD' }
   ];
 
   function ready(fn) {
