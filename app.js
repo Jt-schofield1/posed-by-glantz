@@ -78,6 +78,37 @@
       });
     }
 
+    /* ---- accolades count-up (numbers tick up when the band scrolls into view) ---- */
+    var countEls = Array.prototype.slice.call(document.querySelectorAll('[data-count]'));
+    if (countEls.length && !prefersReduced && 'IntersectionObserver' in window) {
+      var runCount = function (el) {
+        var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+        var dur = 1300 + Math.min(target, 30) * 20;
+        var start = null;
+        function frame(ts) {
+          if (start === null) start = ts;
+          var t = Math.min(1, (ts - start) / dur);
+          var eased = 1 - Math.pow(1 - t, 3);
+          el.textContent = String(Math.round(target * eased));
+          if (t < 1) requestAnimationFrame(frame);
+          else el.textContent = String(target);
+        }
+        requestAnimationFrame(frame);
+      };
+      var countIo = new IntersectionObserver(function (entries) {
+        for (var i = 0; i < entries.length; i++) {
+          if (entries[i].isIntersecting) {
+            runCount(entries[i].target);
+            countIo.unobserve(entries[i].target);
+          }
+        }
+      }, { threshold: 0.4 });
+      countEls.forEach(function (el) {
+        var r = el.getBoundingClientRect();
+        if (r.top > window.innerHeight * 0.9) { el.textContent = '0'; countIo.observe(el); }
+      });
+    }
+
     /* ---- active section tracking ---- */
     var navLinks = document.querySelectorAll('[data-section]');
     function setActive(id) {

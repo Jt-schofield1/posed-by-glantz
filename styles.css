@@ -55,3 +55,13 @@ a:hover{color:var(--gold-bright)}
   body{--play:paused}
   html{scroll-behavior:auto}
 }
+
+/* ---- accolades band (under the hero) ---- */
+.accolades-grid{grid-template-columns:repeat(4,1fr)}
+.acc-tile{border-left:1px solid rgba(201,162,74,.22)}
+.acc-tile:first-child{border-left:0}
+@media (max-width:900px){
+  .accolades-grid{grid-template-columns:1fr 1fr}
+  .acc-tile:nth-child(3){border-left:0}
+  .acc-tile:nth-child(n+3){border-top:1px solid rgba(201,162,74,.22)}
+}
